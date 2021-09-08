@@ -1,0 +1,35 @@
+body {
+  background: #f3f7f7;
+  margin-top: 100px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto !important;
+  /* border: 2px solid #000; */
+}
+
+table {
+  border: 2px solid #000;
+  width: 100%;
+
+}
+thead {
+  text-align: left;
+  border: 1px solid #000;
+  font-size: 22px;
+}
+
+thead th {
+  padding-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 48px;
+
+}
