@@ -17,7 +17,6 @@ app.use(express.json());
 app.use(cors());
 
 app.get( '/', ( req, res ) => {
-  // res.send({ message: "Welcome to Express API"})
   res.sendFile( path.join( __dirname + '/client/homePage.html' ) );
 } );
 

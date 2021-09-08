@@ -1,8 +1,9 @@
 import { MongoClient } from "mongodb";
+import key from "../config/key";
 import { success, error } from "../config/response";
 
 export const inventory_list = async (req, res) => {
-  const url = "mongodb+srv://inventory:spcp7TW5mu1QvYTB@cluster0.skgsu.mongodb.net";
+  const url = key.DATABASE_URL;
   const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
   try {
     await client.connect();
