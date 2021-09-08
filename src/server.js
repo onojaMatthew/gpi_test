@@ -4,7 +4,6 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 import router from "./middleware/router";
-import logger from "./config/error-log";
 
 
 const port = key.PORT || 3200;
@@ -23,7 +22,6 @@ app.get( '/', ( req, res ) => {
 } );
 
 router(app);
-logger();
 
 app.listen(port, () => {
   console.log(`Server is up and running on port ${port}`);
