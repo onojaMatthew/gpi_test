@@ -3,7 +3,7 @@ let loading = false;
 
 function fetchInventory() {
   loading = true
-  fetch("http://localhost:4800/api/v1/inventory/list", {
+  fetch("http://ec2-18-119-105-128.us-east-2.compute.amazonaws.com:4800/api/v1/inventory/list", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
